@@ -40,6 +40,5 @@ https://h5.youzan.com/wscump/checkin/get_activity_by_yzuid_v2.json.+ url script-
 https?:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/enter url script-request-body https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_getToken.js
 https?:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/enter url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js
 
-
-[MITM]
+#[MITM]
 hostname = *.amap.com,  yunbusiness.ccb.com, mall.meituan.com, webapi.qmai.cn, sweixin.hisense.com, auth.aliyundrive.com, youhui.95516.com, app.bilibili.com, m.bilibili.com, h5.youzan.com, api.m.jd.com, api.hellobike.com, game.xiaojukeji.com
