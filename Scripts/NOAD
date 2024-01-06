@@ -1,0 +1,24 @@
+# 建行生活去开屏 hostname = yunbusiness.ccb.com
+^https:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A009  url reject-dict
+
+# 花小猪开屏 hostname = res.hongyibo.com.cn
+^https:\/\/res\.hongyibo\.com\.cn\/os\/gs\/resapi\/activity\/mget\?_t url reject-dict
+
+# > 爱企查 hostname = b2baifanfan.baidu.com
+^https:\/\/b2baifanfan\.baidu\.com\/crm\/web\/b2b\/im\/common\/getConfigByDeviceNum url reject-200
+
+# > 招商银行
+# hostname = webappcfg.paas.cmbchina.com
+# 开屏广告
+^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig url reject-200
+# 首页横幅广告
+^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic url reject-dict
+
+# 粉笔去开屏 hostname = tiku.fenbi.com
+^https:\/\/tiku\.fenbi\.com\/activity\/app\/launcher\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/fenbi.js
+
+# 人民日报去广告 hostname = app.peopleapp.com
+^https:\/\/app\.peopleapp\.com\/Api\/\d+\/HomeApi\/getContentList url script-response-body https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/people-news.js
+
+#[MITM]
+hostname = tiku.fenbi.com, yunbusiness.ccb.com, res.hongyibo.com.cn, app.peopleapp.com, b2baifanfan.baidu.com, webappcfg.paas.cmbchina.com
