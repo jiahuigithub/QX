@@ -10,7 +10,7 @@
 https?:\/\/mall\.meituan\.com\/api\/c\/mallcoin\/checkIn\/queryTaskListInfoV.\? url script-request-body https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.cookie.js
 
 #霸王茶姬 webapi.qmai.cn
-^https?:\/\/webapi\.qmai\.cn\/web\/catering\/integral\/sign\/signIn url script-request-body https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj_token.js
+^https?:\/\/webapi\.qmai\.cn\/web\/catering\/integral\/sign\/signIn url script-request-header https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj_token.js
 
 #海信爱家  sweixin.hisense.com
 ^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember url script-response-body https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/Hisense.js
