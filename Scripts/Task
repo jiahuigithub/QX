@@ -33,6 +33,7 @@
     "10 7 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_bean_home.js, tag=领京豆额外奖励, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png",
     "5-45/20 * * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_health_collect.js, tag=东东健康社区收能量, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd.png",
     "13 1,6,22 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_health.js, tag=东东健康社区, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd.png",
-    "event-interaction https://raw.githubusercontent.com/getsomecat/Qx/main/Net_Speed.js, tag=Speed测速, img-url=https://raw.githubusercontent.com/Yuanxsxs/QtumultX/master/Icon/Catcat/b2b4e2bf895a2c76.png"
+    "event-interaction https://raw.githubusercontent.com/getsomecat/Qx/main/Net_Speed.js, tag=Speed测速, img-url=https://raw.githubusercontent.com/Yuanxsxs/QtumultX/master/Icon/Catcat/b2b4e2bf895a2c76.png, enabled=true",
+    "event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体 - 解锁查询, img-url=checkmark.seal.system, enabled=true"
   ]
 }
