@@ -1,4 +1,4 @@
-#!name=自用VIP解锁
+#!name=自用VIP解锁+
 
 # NotabilityPro notability.com
 ^https?:\/\/notability\.com\/(global|subscriptions) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/notability.js
@@ -34,5 +34,10 @@ https://api2.mubu.com/v3/api/user/current_user url script-response-body https://
 # 阿里云盘VIP hostname = *.aliyundrive.com, *.alipan.com
 ^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
 
+# 京东|淘宝比价 hostname = api.m.jd.com,trade-acs.m.taobao.com
+^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/JD/JD_Price.js
+^http://.+/amdc/mobileDispatch url script-request-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+
 [MITM]
-hostname=notability.com, api2.mubu.com, *.music.163.com, spclient.wg.spotify.com, pan.baidu.com, appwk.baidu.com, user-kaji-api.b612kaji.com, aiqicha.baidu.com, purchase-tianyan-api.tianyancam.com, *xmind.*, *.aliyundrive.com, *.alipan.com
+hostname=notability.com, api2.mubu.com, *.music.163.com, spclient.wg.spotify.com, pan.baidu.com, appwk.baidu.com, user-kaji-api.b612kaji.com, aiqicha.baidu.com, purchase-tianyan-api.tianyancam.com, *xmind.*, *.aliyundrive.com, *.alipan.com, hostname = api.m.jd.com,trade-acs.m.taobao.com
