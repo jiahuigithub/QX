@@ -9,8 +9,8 @@
 #美团买菜  mall.meituan.com
 https?:\/\/mall\.meituan\.com\/api\/c\/mallcoin\/checkIn\/queryTaskListInfoV.\? url script-request-body https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.cookie.js
 
-#霸王茶姬 webapi.qmai.cn
-^https?:\/\/webapi\.qmai\.cn\/web\/catering\/integral\/sign\/signIn url script-request-header https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj_token.js
+#霸王茶姬 hostname = qmwebapi.qmai.cn,webapi.qmai.cn
+^https:\/\/(webapi|qmwebapi)\.qmai\.cn\/web\/(catering|catering2-apiserver)\/crm\/points-info url script-request-header https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js
 
 #海信爱家  sweixin.hisense.com
 ^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember url script-response-body https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/Hisense.js
@@ -41,4 +41,4 @@ https?:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/enter url script-request-bod
 https?:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/enter url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js
 
 #[MITM]
-hostname = *.amap.com,  yunbusiness.ccb.com, mall.meituan.com, webapi.qmai.cn, sweixin.hisense.com, auth.aliyundrive.com, youhui.95516.com, app.bilibili.com, m.bilibili.com, h5.youzan.com, api.m.jd.com, api.hellobike.com, game.xiaojukeji.com
+hostname = *.amap.com, yunbusiness.ccb.com, mall.meituan.com, qmwebapi.qmai.cn, webapi.qmai.cn, sweixin.hisense.com, auth.aliyundrive.com, youhui.95516.com, app.bilibili.com, m.bilibili.com, h5.youzan.com, api.m.jd.com, api.hellobike.com, game.xiaojukeji.com
