@@ -1,0 +1,38 @@
+#!name=自用VIP解锁
+
+# NotabilityPro notability.com
+^https?:\/\/notability\.com\/(global|subscriptions) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/notability.js
+
+# 幕布会员 api2.mubu.com
+https://api2.mubu.com/v3/api/user/current_user url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/mubu.js
+
+# 网易云会员 *.music.163.com
+^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-hader https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js
+
+# Spotify Premium spclient.wg.spotify.com
+^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ url script-request-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+
+# 百度网盘解锁 pan.baidu.com
+^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://gitlab.com/isous/loonresource/-/raw/main/Script/BaiduNetDisk/BaiduNetDisk_crack.js
+
+# 百度文库解锁 appwk.baidu.com
+^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo url script-response-body https://github.com/deezertidal/private/raw/master/js-backup/Crack/baidulibrary.js
+
+# B612咔叽 user-kaji-api.b612kaji.com
+^https://user-kaji-api.b612kaji.com/v1/purchase/subscription/subscriber/status url script-response-body https://github.com/deezertidal/private/raw/master/js-backup/Crack/612.js
+
+# 爱企查vip aiqicha.baidu.com
+^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/aiqicha.js
+
+# 盐甜相机VIP hostname = purchase-tianyan-api.tianyancam.com
+^http[s]?:\/\/purchase-tianyan-api.tianyancam.com/v1/purchase/subscription/subscriber/status url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/tianyancam.js
+
+# Xmind-思维导图 *xmind.*
+^https?:\/\/(?:www\.)?xmind\..*\/.+\/(devices|token\/.+) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js
+
+# 阿里云盘VIP hostname = *.aliyundrive.com, *.alipan.com
+^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
+
+[MITM]
+hostname=notability.com, api2.mubu.com, *.music.163.com, spclient.wg.spotify.com, pan.baidu.com, appwk.baidu.com, user-kaji-api.b612kaji.com, aiqicha.baidu.com, purchase-tianyan-api.tianyancam.com, *xmind.*, *.aliyundrive.com, *.alipan.com
