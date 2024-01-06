@@ -1,0 +1,37 @@
+{
+  "name": "自用Tasks",
+  "description": "https://github.com/jiahuigithub/QX",
+  "task": [
+    "0 1 0 * * ? https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, tag=阿里云盘签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png, enabled=true",
+    "10 0,8,12,18 * * * https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_fruit.js, tag=滴滴橙心果园, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/task/didi.png, enabled=true",
+    "30 1,8,12,17 * * * https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuaishou/ks_fruit.js, tag=快手果园, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/task/kuaishou.png, enabled=true",
+    "30 1,7,12,18,22 * * * https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/pinduoduo/pdd_guoyuan.js, tag=拼多多果园, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/pinduoduo.png, enabled=true",
+    "15 8,10,12,18,20 * * * https://raw.githubusercontent.com/LinYuanovo/scripts/main/dygy.js, tag=抖音果园, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_1.png, enabled=true",
+    "10 0 * * * https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jddj_fruit.js, tag=京东到家果园任务, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=true",
+    "0 */1 * * * https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jddj_fruit_collectWater.js, tag=京东到家果园水车自动收水滴, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=true",
+    "10 0 * * * https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jddj_bean.js, tag=京东到家鲜豆任务, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=true",
+    "10 0 * * * https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jddj_plantBeans.js, tag=京东到家鲜豆庄园, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=true",
+    "0 * */1 * * https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jddj_getPoints.js, tag=京东到家鲜豆庄园收水滴, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png, enabled=true",
+    "11 0 * * * https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, tag=建行生活签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ccbLife.jpg, enabled=true",
+    "2 0 * * * https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, tag=高德地图打车签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Gddt.png, enabled=true"，
+    "30 10 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js, tag=百度贴吧, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba.png, enabled=true",
+    "20 0 * * * https://raw.githubusercontent.com/i-liulang/Surge/main/ysf.js, tag=云闪付签到, enabled=true",
+    "0 6,8 * * * https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.mallcoin.task.js, tag=美图买菜任务, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Mtmc.png, enabled=true",
+    "10 0 * * * https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js, tag=霸王茶姬小程序签到, img-url=https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.png, enabled=true",
+    "10 9 * * * https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, tag=B站每日等级任务, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/bilibili.png, enabled=true",
+    "30 8 * * * https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js, tag=Sakura Checkbox, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Checkbox.png, enabled=true",
+    "3 0 * * * https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/Hisense.js, tag=海信爱家, img-url=https://github.com/FoKit/Scripts/blob/main/images/hisense.png?raw=true, enabled=true",
+    "21 0 0 * * * https://gist.githubusercontent.com/Sliverkiss/4e0081f7b18a2cea9dbdf13545e60885/raw/d53857028ced29aed98affb5d4a602b2a8bf94cf/hldc.js, tag=哈啰单车奖励金签到,img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hldc.png, enabled=false",
+    "10 0,22 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_speed_redpocke.js, tag=京东极速版红包, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd.png, enabled=true",
+    "11 0,20 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_js_cash.js, tag=签到领现金, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+    "10-20/5 12 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_live.js, tag=京东直播, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+    "21 7 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_MMdou.js, tag=MM领京豆, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+    "10 0 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_kd.js, tag=京东快递签到, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_kd.png, enabled=true",
+    "2 9 * * * https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_bean_change.js, tag=京东资产变动通知, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+    "10 7 * * * jd_bean_home.js, tag=领京豆额外奖励, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png, enabled=true",
+    "0 9 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/main/Task/JD/JD_DailyBonus.js, tag=京东, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png",
+    "10 7 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_bean_home.js, tag=领京豆额外奖励, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png",
+    "5-45/20 * * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_health_collect.js, tag=东东健康社区收能量, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd.png",
+    "13 1,6,22 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Task/JD/jd_health.js, tag=东东健康社区, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd.png"
+  ]
+}
