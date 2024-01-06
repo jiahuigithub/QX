@@ -44,4 +44,4 @@ https://api2.mubu.com/v3/api/user/current_user url script-response-body https://
 ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.data\.get url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 
 #[MITM]
-hostname=notability.com, api2.mubu.com, *.music.163.com, spclient.wg.spotify.com, pan.baidu.com, appwk.baidu.com, user-kaji-api.b612kaji.com, aiqicha.baidu.com, purchase-tianyan-api.tianyancam.com, *xmind.*, *.aliyundrive.com, *.alipan.com, %APPEND% quantumult.app, api.m.jd.com,trade-acs.m.taobao.com
+hostname=notability.com, api2.mubu.com, *.music.163.com, spclient.wg.spotify.com, pan.baidu.com, appwk.baidu.com, user-kaji-api.b612kaji.com, aiqicha.baidu.com, purchase-tianyan-api.tianyancam.com, *xmind.*, *.aliyundrive.com, *.alipan.com, quantumult.app, api.m.jd.com,trade-acs.m.taobao.com
