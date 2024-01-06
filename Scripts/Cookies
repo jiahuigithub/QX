@@ -1,0 +1,45 @@
+#!name=自用Cookies
+
+# 高德打车签到  *.amap.com
+^https:\/\/m5(-zb)?\.amap\.com\/ws\/yuece\/(act|openapi)\/(activity\/current\/)?query url script-response-body https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js
+
+#建行生活  yunbusiness.ccb.com
+^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) url script-request-body https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js
+
+#美团买菜  mall.meituan.com
+https?:\/\/mall\.meituan\.com\/api\/c\/mallcoin\/checkIn\/queryTaskListInfoV.\? url script-request-body https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.cookie.js
+
+#霸王茶姬 webapi.qmai.cn
+^https?:\/\/webapi\.qmai\.cn\/web\/catering\/integral\/sign\/signIn url script-request-body https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj_token.js
+
+#海信爱家  sweixin.hisense.com
+^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember url script-response-body https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/Hisense.js
+
+#阿里云盘签到 auth.aliyundrive.com
+https:\/\/auth.aliyundrive.com\/v2\/account\/token url script-response-body https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+
+# > 云闪付 hostname = youhui.95516.com
+^https:\/\/youhui.95516.com\/newsign\/api\/sharing_power\/showUserTask url script-request-body https://raw.githubusercontent.com/i-liulang/Surge/main/ysf.js
+
+#BiliBili每日等级任务 app.bilibili.com, m.bilibili.com
+# B站Cookie(APP)
+^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? url script-request-header https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js
+# B站Cookie(网页)
+^https?:\/\/m.bilibili.com/$ url script-request-header https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js
+
+# Sakura Checkbox｜有赞小程序批量签到工具 h5.youzan.com
+https://h5.youzan.com/wscump/checkin/get_activity_by_yzuid_v2.json.+ url script-response-header https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js
+
+# 京东 api.m.jd.com
+^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?) url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+# 哈喽单车 api.hellobike.com
+^https:\/\/api\.hellobike\.com\/api\?user\.taurus\.pointInfo url script-request-body https://gist.githubusercontent.com/Sliverkiss/4e0081f7b18a2cea9dbdf13545e60885/raw/d53857028ced29aed98affb5d4a602b2a8bf94cf/hldc.js
+
+# 滴滴果园获取token game.xiaojukeji.com
+https?:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/enter url script-request-body https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_getToken.js
+https?:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/enter url script-request-header https://raw.githubusercontent.com/leafTheFish/DeathNote/main/ddgy.js
+
+
+[MITM]
+hostname = *.amap.com,  yunbusiness.ccb.com, mall.meituan.com, webapi.qmai.cn, sweixin.hisense.com, auth.aliyundrive.com, youhui.95516.com, app.bilibili.com, m.bilibili.com, h5.youzan.com, api.m.jd.com, api.hellobike.com, game.xiaojukeji.com
