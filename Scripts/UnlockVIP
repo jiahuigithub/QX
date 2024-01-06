@@ -37,7 +37,8 @@ https://api2.mubu.com/v3/api/user/current_user url script-response-body https://
 # 京东|淘宝比价 hostname = api.m.jd.com,trade-acs.m.taobao.com
 ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/JD/JD_Price.js
 ^http://.+/amdc/mobileDispatch url script-request-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
-^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+^http://.+/amdc/mobileDispatch url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.data\.get url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 
 #[MITM]
 hostname=notability.com, api2.mubu.com, *.music.163.com, spclient.wg.spotify.com, pan.baidu.com, appwk.baidu.com, user-kaji-api.b612kaji.com, aiqicha.baidu.com, purchase-tianyan-api.tianyancam.com, *xmind.*, *.aliyundrive.com, *.alipan.com, api.m.jd.com,trade-acs.m.taobao.com
