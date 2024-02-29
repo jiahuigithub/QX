@@ -16,7 +16,7 @@ https?:\/\/mall\.meituan\.com\/api\/c\/mallcoin\/checkIn\/queryTaskListInfoV.\? 
 ^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember url script-response-body https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/Hisense.js
 
 #阿里云盘签到 auth.aliyundrive.com
-https:\/\/auth.aliyundrive.com\/v2\/account\/token url script-response-body https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token url script-request-body https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js
 
 # > 云闪付 hostname = youhui.95516.com
 ^https:\/\/youhui.95516.com\/newsign\/api\/sharing_power\/showUserTask url script-request-header https://raw.githubusercontent.com/i-liulang/Surge/main/ysf.js
